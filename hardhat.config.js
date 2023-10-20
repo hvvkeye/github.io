@@ -22,9 +22,12 @@ module.exports = {
     artifacts: './src/artifacts',
   },
   networks: {
+    hardhat: {
+      chainId:1337,
+    },
     matic: {
       url: "https://polygon-mumbai.g.alchemy.com/v2/YOUR_APP",
-      accounts: ["MATIC_PRIVATE_KEY"]
+      account: ["MATIC_PRIVATE_KEY"]
     }
   },
 };
